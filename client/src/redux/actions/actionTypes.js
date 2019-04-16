@@ -1,0 +1,21 @@
+// creation 
+export const CREATE_TODO = 'CREATE_TODO'
+export const CREATE_TODO_ERROR = 'CREATE_TODO_ERROR';
+export const CREATE_TODO_SUCCESS= 'CREATE_TODO_SUCCESS'
+
+// update 
+export const UPDATE_TODO = 'UPDATE_TODO'
+export const UPDATE_TODO_ERROR = 'UPDATE_TODO_ERROR';
+export const UPDATE_TODO_SUCCESS= 'UPDATE_TODO_SUCCESS'
+
+// delete 
+export const DELETE_TODO = 'DELETE_TODO'
+export const DELETE_TODO_ERROR = 'DELETE_TODO_ERROR';
+export const DELETE_TODO_SUCCESS= 'DELETE_TODO_SUCCESS'
+
+//get  
+export const GET_TODO = 'GET_TODO'
+export const GET_TODO_ERROR = 'GET_TODO_ERROR';
+export const GET_TODO_SUCCESS= 'GET_TODO_SUCCESS'
+
+
