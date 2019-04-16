@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {updateTodo,getTodo} from '../redux/actions/actions'
+import {updateTodo,getTodo,getTodos} from '../redux/actions/actions'
 import {connect } from 'react-redux'
 
 
@@ -27,6 +27,7 @@ class EditTodo extends Component {
           }
           this.props.updateTodo(this.props.match.params.id,todo)  
           this.props.history.push("/");
+          this.props.getTodos()
 
       }
       handleChange =(e) =>{
@@ -66,4 +67,4 @@ const mapStateToProps = state=>{
     todo:state.todoReducer.todo
   }
 }
-export default  connect(mapStateToProps,{updateTodo,getTodo})(EditTodo)
+export default  connect(mapStateToProps,{updateTodo,getTodo,getTodos})(EditTodo)

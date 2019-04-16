@@ -26,7 +26,8 @@ export function deleteTodo(id){
     return function(dispatch){
         axios.delete(`http://localhost:3001/api/deleteTodo/${id}`)
         .then(res=>dispatch({
-            type:DELETE_TODO
+            type:DELETE_TODO,
+            id
         }))
 
     }
@@ -38,9 +39,10 @@ export function updateTodo(id,todo){
         .then(res=>res.data)
         .then(updatedTodo=>dispatch({
             type:UPDATE_TODO,
-            todo:updatedTodo.data
-
+            todo:updatedTodo.data,
+            
         }))
+    
     }
 }
 export function getTodo(id){

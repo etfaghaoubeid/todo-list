@@ -14,9 +14,6 @@ export default function Navbar() {
         <li className="nav-item active">
           <Link  to='createTodo'className="nav-link" href="#">Create todo <span className="sr-only">(current)</span></Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
         
       </ul>
       

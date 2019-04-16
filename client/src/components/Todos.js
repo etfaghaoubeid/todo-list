@@ -15,7 +15,7 @@ import Todo from './Todo';
       this.props.deleteTodo(id)
     }
     shouldComponentUpdate(prevProps,prevState,snapchot){
-      if(prevProps && this.props.todos!=prevProps.todos){
+      if(prevProps && this.props.todos!=prevProps){
         console.log('repet didupdate');
         return true
       }

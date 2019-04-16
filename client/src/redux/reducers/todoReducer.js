@@ -18,12 +18,13 @@ export function todoReducer(state = initState,action){
        case DELETE_TODO:
        return{
           ...state,
-          todos:[...state.todos]
+          todos:[...state.todos.filter(todo=>todo._id!=action.id)]
        }
        case UPDATE_TODO:
        return{
-          ...state,
-          todos:[...state.todos,action.todo]
+         ...state,
+          todos:[...state.todos.filter(todo=>todo._id!=action.todo._id),action.todo]
+          
        }
        case GET_TODO:
        return{
