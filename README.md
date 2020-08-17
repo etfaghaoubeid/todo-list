@@ -11,5 +11,5 @@ npm install
 add your mongoDb url to config/config
 
 ### start server :
-npm run dev
+npm run dev 
 ```
